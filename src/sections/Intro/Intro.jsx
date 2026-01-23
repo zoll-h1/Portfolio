@@ -1,7 +1,7 @@
 export default function Intro() {
     return (
-        <section style={{ minHeight: "100vh", display: "grid", placeItems: "Center" }}>
-            <h1>Intro</h1>
+        <section className="min-h-screen flex items-center justify-center border-b border-white/10">
+            <h1 className="text-6xl font-extrabold tracking-tight">Intro</h1>
         </section>
     );
 }
