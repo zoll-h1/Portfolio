@@ -6,7 +6,7 @@ export default function About() {
             About
         </h2>
         <p className="mt-4 text-white/70 max-w-2xl">
-          Short intro here. (We’ll replace with real content later.)
+          Intro bro
         </p>
       </div>
     </section>

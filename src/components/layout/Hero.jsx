@@ -1,51 +1,41 @@
-function Hero() {
-    return (
-        <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-            {/* Background efects будут добавлены позже*/}
+export default function Hero() {
+  return (
+    <section className="min-h-screen pt-24 flex items-center justify-center relative overflow-hidden">
+      {/* Background effects will be added later (blobs/noise) */}
 
-            <div classNmae="relative z-10 text-center px-6">
+      <div className="relative z-10 text-center px-6 max-w-3xl">
+        <p className="text-lg sm:text-xl text-gray-400 mb-4">
+          Hi, I'm Nurbek
+        </p>
 
-                {/* Greeting */}
+        <h1 className="text-5xl sm:text-7xl font-bold text-white mb-6 tracking-tight">
+          Nurbek
+        </h1>
 
-                <p className="text-xl text-gray-400 mb-4">
-                    Hi , I'm 
-                </p>
+        <h2 className="text-2xl sm:text-3xl text-gray-300 mb-8">
+          Computer Science Student • Backend & Systems
+        </h2>
 
-                {/* Name - Big*/}
-                <h1 className="text-7xl font-bold text-white mb-6">
-                   Nigga   
-                </h1>
+        <p className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto mb-12">
+          Here is my small portfolio 
+        </p>
 
-                {/* Role/Title*/}
-                <h2 className="text-7xl text-gray-300 mb-8">
-                  Computer Science Nigga & Super Nigga
-                </h2>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#projects"
+            className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            View Projects
+          </a>
 
-                {/* Short Bio*/}
-                <p className="text-lg text-gray-400 max-w-2xl mx-auto md-12">
-                    I was realy black in my past life
-                </p>
-
-                {/* CTA Buttons */}
-                <div className="flex gap-4 justify-center">
-                    <a
-                      href="#projects"
-                      className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition colors"        
-                    >
-                        View Projects
-                    </a>
-                    <a
-                    
-                      href="#contact"
-                      className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition colors"                     
-                    >
-                        Contact me
-                    </a>
-
-                </div>
-            </div>
-        </section>
-    );
+          <a
+            href="#contact"
+            className="px-8 py-3 border border-white/20 text-white rounded-lg hover:bg-white/10 transition-colors"
+          >
+            Contact Me
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 }
-
-export default Hero;

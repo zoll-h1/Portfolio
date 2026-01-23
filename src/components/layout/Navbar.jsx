@@ -1,15 +1,12 @@
-function Navbar() {
+export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/70 backdrop-blur-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          
-          {/* Logo / Name */}
           <div className="text-2xl font-bold text-white">
-            Your Name
+            Navigation
           </div>
 
-          {/* Navigation Links */}
           <div className="flex gap-8">
             <a href="#about" className="text-gray-300 hover:text-white transition-colors">
               About
@@ -21,13 +18,8 @@ function Navbar() {
               Contact
             </a>
           </div>
-
         </div>
       </div>
     </nav>
   );
 }
-
-export default Navbar;
-
-

@@ -6,7 +6,7 @@ export default function Contact() {
             Contact
         </h2>
         <p className="mt-4 text-white/70">
-          Add socials + email later.
+          You don't need 
         </p>
       </div>
     </section>

@@ -6,7 +6,7 @@ export default function Projects() {
             Projects
         </h2>
         <p className="mt-4 text-white/70">
-          Projects grid comes next step.
+          Projects are here
         </p>
       </div>
     </section>
