@@ -1,17 +1,18 @@
-import Intro from "./sections/Intro/Intro";
-import About from "./sections/About/About";
-import TableOfContent from "./sections/TableOfContent/TableOfContent";
-import Projects from "./sections/Projects/Projects";
-import Thanks from "./sections/Thanks/Thanks";
-
+import About from "./components/layout/About";
+import Projects from "./components/layout/Projects";
+import Hero from "./components/layout/Hero";
+import Navbar from "./components/layout/Navbar";
+import Contact from "./components/layout/Contact";
+import Footer from "./components/layout/Footer";
 export default function App() {
     return (
-        <div classname="min-h-screen bg-black text-white">
-            <Intro />
+        <div className="bg-gray-950 text-white">
+            <Navbar />
+            <Hero />
             <About />
-            <TableOfContent />
             <Projects />
-            <Thanks />
+            <Contact />
+            <Footer />
         </div>
     );
 }
