@@ -1,6 +1,10 @@
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 export default function GlassCard({ children, className = ""}) {
     return (
-        <div
+        <motion.div
+         whileHover={{ y: -6, scale: 1.01 }}
+         transition={{ type: "spring", stiffness: 300, damping: 20}}
          className={[
             "rounded-2xl border border-white/10 bg-white/[0.06] backdrop-blur-xl",
             "shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_20px_60px_rgba(0,0,0,0.55)]",
@@ -9,6 +13,6 @@ export default function GlassCard({ children, className = ""}) {
          ].join(" ")}
         >
             {children}
-        </div>
+        </motion.div>
     );
 }

@@ -1,4 +1,6 @@
 import GlassCard from "../ui/GlassCard";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 export default function About() {
   return (
     <section id="about" className="py-20 border-t border-white/10">
