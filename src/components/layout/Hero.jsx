@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section className="min-h-screen pt-24 flex items-center justify-center relative overflow-hidden">
       {/* Background effects will be added later (blobs/noise) */}
 
-      <div className="relative z-10 text-center px-6 max-w-3xl">
+      <motion.div
+         initial={{ opacity: 0, y: 40}}
+         animate={{ opacity: 1, y: 0}}
+         transition={{ duration: 0.8, ease: "easeOut"}}
+         className="relative z-10 text-center px-6 max-w-3xl"
+         >
         <p className="text-lg sm:text-xl text-gray-400 mb-4">
           Hi, I'm Nurbek
         </p>
@@ -35,7 +41,7 @@ export default function Hero() {
             Contact Me
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
