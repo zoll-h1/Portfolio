@@ -7,6 +7,7 @@ import Footer from "./components/layout/Footer";
 import BackgroundLayer from "./components/layout/BackgroundLayer";
 import NoiseOverlay from "./components/layout/NoiseOverlay";
 import useLenis from "./hooks/useLenis";
+import { Analytics } from "@vercel/analytics/react";
 export default function App() {
     useLenis()
     return (
@@ -19,6 +20,7 @@ export default function App() {
             <Projects />
             <Contact />
             <Footer />
+            <Analytics />
         </div>
     );
 }
