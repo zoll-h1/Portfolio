@@ -31,7 +31,7 @@ export default function Hero() {
           Hi, I'm Nurbek 
         </motion.p>
 
-        <motion.h1 variants={item} className="text-5xl sm:text-7xl font-bold text-white mb-6 tracking-tight">
+        <motion.h1 variants={item} className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight">
           Nurbek
         </motion.h1>
 

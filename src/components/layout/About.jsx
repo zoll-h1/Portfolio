@@ -3,7 +3,7 @@ import GlassCard from "../ui/GlassCard";
 import { motion } from "framer-motion";
 export default function About() {
   return (
-    <section id="about" className="py-20 border-t border-white/10">
+    <section id="about" className="scroll-mt-24 py-20 border-t border-white/10">
       <div className="mx-auto max-w-5xl px-6">
         <h2 className="text-3xl font-bold tracking-tight">About</h2>
         <motion.div 

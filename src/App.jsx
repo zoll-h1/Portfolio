@@ -10,7 +10,7 @@ import useLenis from "./hooks/useLenis";
 export default function App() {
     useLenis()
     return (
-        <div className="bg-gray-950 text-white">
+        <div id="top" className="bg-gray-950 text-white">
             <BackgroundLayer />
             <NoiseOverlay />
             <Navbar />
