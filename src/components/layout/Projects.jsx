@@ -2,9 +2,21 @@ import GlassCard from "../ui/GlassCard";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 const demoProjects = [
-  { title : "Project one", desc:"Short Description", link:"#"},
-  { title : "Project two", desc:"Short Description", link:"#"},
-  { title : "Project three", desc:"Short Desciption", link:"#"},
+  { title : "Java Desktop calculator",
+    desc:"A desktop calculator built with Java to practice OOP concepts, UI logic, and event handling",
+    link:"#",
+    tech:"Java + OOP * Desktop UI",   
+  },
+  { title : "Python Banking App",
+    desc:"A simple banking system built with PyQt5 featuring basic transactions and user interaction",
+    link:"#",
+    tech:"Python + PyQt5 * GUI",
+  },
+  { title :"Personal Portfolio Website",
+    desc:"My personal porfolio built with modern frontend tools and smooth animation",
+    link:"#",
+    tech:"React * Tailwind * Framer Motion",   
+  },
 ];
 export default function Projects() {
   return (
@@ -46,6 +58,7 @@ export default function Projects() {
                 className="inline-block mt-4 text-sm text-blue-400 hover:text-blue-300"
               >
                 View on GitHub 
+                <p className="mt-2 text-sm text-white/50">{p.tech}</p>
               </motion.a>
             </GlassCard>
            </motion.div>
