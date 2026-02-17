@@ -5,7 +5,7 @@ const demoProjects = [
   { title : "React Todo-List using react/zustand",
     desc:"A react todo list , in this todo you can delete/add and make changes , beginner-friendly design",
     link:"https://github.com/zoll-h1/todo-list.git",
-    tech:"React + Zustand * Beginner design",   
+    tech:"React + Zustand * Beginner design(update soon)",   
   },
   { title : "Python telegram Bot",
     desc:"A simple telegram bot ,  featuring basic transactions and user interaction",
