@@ -2,13 +2,13 @@ import GlassCard from "../ui/GlassCard";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 const demoProjects = [
-  { title : "Java Desktop calculator (Soon)",
-    desc:"A desktop calculator built with Java to practice OOP concepts, UI logic, and event handling",
-    link:"#",
-    tech:"Java + OOP * Desktop UI",   
+  { title : "Todo List",
+    desc:"A simple todo list application built with React and Zustand * CSS, featuring a clean and intuitive user interface.",
+    link:"https://github.com/zoll-h1/todo-list.git",
+    tech:"React * Zustand",   
   },
   { title : "Python telegram Bot",
-    desc:"A simple telegram bot ,  featuring basic transactions and user interaction",
+    desc:"A simple telegram bot , featuring basic transactions and user interaction",
     link:"https://github.com/zoll-h1/telegram-bot.git",
     tech:"Python + SqlAlchemy *  FastApi",
   },
