@@ -3,9 +3,9 @@ import GlassCard from "../ui/GlassCard";
 import { motion } from "framer-motion";
 const demoProjects = [
   { title : "Todo List",
-    desc:"A simple todo list application built with React and Zustand * CSS, featuring a clean and intuitive user interface.",
+    desc:"A simple todo list application built with React and Zustand, featuring add/delete/edit actions and a beginner-friendly interface.",
     link:"https://github.com/zoll-h1/todo-list.git",
-    tech:"React * Zustand",   
+    tech:"React + Zustand",   
   },
   { title : "Python telegram Bot",
     desc:"A simple telegram bot , featuring basic transactions and user interaction",
