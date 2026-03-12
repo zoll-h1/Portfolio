@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import Button from "../ui/Button";
 
 const container = {
   hidden : { opacity : 0},
@@ -44,19 +45,12 @@ export default function Hero() {
         </motion.p>
 
         <motion.div variants={item} className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#projects"
-            className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-          >
+          <Button href="#projects" variant="primary">
             View Projects
-          </a>
-
-          <a
-            href="#contact"
-            className="px-8 py-3 border border-white/20 text-white rounded-lg hover:bg-white/10 transition-colors"
-          >
+          </Button>
+          <Button href="#contact" variant="outline">
             Contact Me
-          </a>
+          </Button>
         </motion.div>
       </motion.div>
     </section>

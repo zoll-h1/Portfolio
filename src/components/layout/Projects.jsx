@@ -1,23 +1,7 @@
 import GlassCard from "../ui/GlassCard";
+import { projects } from "../../data/projects";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-const demoProjects = [
-  { title : "Todo List",
-    desc:"A simple todo list application built with React and Zustand, featuring add/delete/edit actions and a beginner-friendly interface.",
-    link:"https://github.com/zoll-h1/todo-list.git",
-    tech:"React + Zustand",   
-  },
-  { title : "Python telegram Bot",
-    desc:"A simple telegram bot , featuring basic transactions and user interaction",
-    link:"https://github.com/zoll-h1/telegram-bot.git",
-    tech:"Python + SqlAlchemy *  FastApi",
-  },
-  { title :"Personal Portfolio Website",
-    desc:"My personal porfolio built with modern frontend tools and smooth animation",
-    link:"https://github.com/zoll-h1/Portfolio.git",
-    tech:"React * Tailwind * Framer Motion",   
-  },
-];
 export default function Projects() {
   return (
     <section id="projects" className="scroll-mt-24 py-20 border-t border-white/10">
@@ -38,7 +22,7 @@ export default function Projects() {
           }}
           className="mt-10 grid gap-6 sm:grid-cols-2"
           >
-          {demoProjects.map((p) => (
+          {projects.map((p) => (
             <motion.div
               key={p.title}
               variants={{
@@ -52,7 +36,7 @@ export default function Projects() {
               <motion.a
                 href={p.link}
                 target="_blank"
-                rel="noopener noreferror"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-block mt-4 text-sm text-blue-400 hover:text-blue-300"

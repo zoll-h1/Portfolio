@@ -9,7 +9,7 @@ export default function About() {
         <motion.div 
           initial="hidden"
           whileInView="show"
-          viewport={{ once : true, amounr : 0.2}}
+          viewport={{ once : true, amount : 0.2}}
           variants={{
             hidden: {},
             show: {
